@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Datos Prersonales</title>
+</head>
+<body>
+    <h1>MI PRIMER CRUD - Registro de Usuarios</h1>
+
+    <div>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" placeholder="Nombre completo">
+
+        <label for="correo">Correo:</label>
+        <input type="email" id="correo" placeholder="ejemplo@dominio.com">
+
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" placeholder="Edad">
+
+        <label for="direccion">Dirección:</label>
+        <input type="text" id="direccion" placeholder="Calle, número, ciudad">
+
+        <label for="telefono">Teléfono:</label>
+        <input type="text" id="telefono" placeholder="Número de teléfono">
+
+        <label for="ocupacion">Ocupación:</label>
+        <input type="text" id="ocupacion" placeholder="Ocupación actual">
+
+        <button onclick="agregarUsuario()">Agregar Usuario</button>
+    </div>
+    <br>
+    <table>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Nombre</th>
+                <th>Correo</th>
+                <th>Edad</th>
+                <th>Dirección</th>
+                <th>Teléfono</th>
+                <th>Ocupación</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody id="listaUsuarios">
+            </tbody>
+    </table>
+    <script src="./main.js"></script>
+</body>
+</html>

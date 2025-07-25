@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Peliculas</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Gestión de Películas (CRUD)</h1>
+
+        <div class="form-section">
+            <div class="form-group">
+                <label for="titulo">Título:</label>
+                <input type="text" id="titulo" placeholder="Ej: La La Land" required>
+                <span class="error-message" id="errorTitulo"></span>
+            </div>
+            <div class="form-group">
+                <label for="director">Director:</label>
+                <input type="text" id="director" placeholder="Ej: Damien Chazelle" required>
+                <span class="error-message" id="errorDirector"></span>
+            </div>
+            <div class="form-group">
+                <label for="anioEstreno">Año de estreno:</label>
+                <input type="number" id="anioEstreno" placeholder="Ej: 2016" required>
+                <span class="error-message" id="errorAnioEstreno"></span>
+            </div>
+            <div class="form-group">
+                <label for="genero">Género:</label>
+                <input type="text" id="genero" placeholder="Ej: Musical, Drama" required>
+                <span class="error-message" id="errorGenero"></span>
+            </div>
+            <div class="form-group">
+                <label for="calificacion">Calificación (1-10):</label>
+                <input type="number" id="calificacion" min="1" max="10" placeholder="Ej: 8" required>
+                <span class="error-message" id="errorCalificacion"></span>
+            </div>
+            
+            <div class="button-group">
+                <button onclick="guardarPelicula()">Guardar Película</button>
+            </div>
+        </div>
+
+        <h2>Lista de Películas</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Título</th>
+                    <th>Director</th>
+                    <th>Año Estreno</th>
+                    <th>Género</th>
+                    <th>Calificación</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="listaPeliculas">
+                </tbody>
+        </table>
+    </div>
+</body>
+</html>
+    <script src="./main.js"></script>
+</body>
+</html>
